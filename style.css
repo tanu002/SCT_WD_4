@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(45deg, #e4245e, #f77168);
+}
+
+.wrapper{
+    width: 35%;
+    margin-top: 50px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    color: #fff;
+    background: radial-gradient(#d30468,#3a0219);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1{
+    margin-bottom: 5%;
+}
+
+#task-area{
+    display: flex;
+    gap: 10px;
+}
+
+#single-task{
+    width: 76%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+#date-time{
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: rgb(107, 107, 107);
+}
+button{
+    background: linear-gradient(45deg,#dc1599,#f99369);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 13px 18px; 
+    width: 18%;
+    /* padding: 13px 5px; */
+    font-size: 18px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: black;
+    font-size: 18px;
+    list-style: none;
+    padding: 0 15px;
+    line-height: 35px;
+    width: 40%; /* Full width inside the container */
+    max-width: 100%; /* Prevents overflow */
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px rgb(53, 11, 37);
+}
+
+.task input[type="checkbox"] {
+    display: none;
+}
+
+.task .delete {
+    color: red;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0;
+    float: right;
+}
+
+.task .edit {
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+ @media screen and (max-width: 460px){
+    .wrapper{
+        width: 200px;
+    }
+
+    .wrapper h1{
+        font-size: 30px;
+    }
+
+    #single-task{
+        width: 85px;
+        font-size: 12px;
+    }
+
+    #date-time{
+        width: 86px;
+        font-size: 12px;
+    }
+
+    button{
+        width: 45px;
+        padding-left: 12px;
+        font-size: 12px;
+    }
+
+    .task{
+        width: 290px;
+        font-size: 12px;
+    }
+}
+
+ @media screen and (min-width: 800px){
+    .wrapper{
+        width: 400px;
+    }
+
+    
+    .wrapper h1{
+        font-size: 40px;
+    }
+
+    #single-task{
+        width: 165px;
+    }
+
+    .task{
+        width: 500px;
+        font-size: 18px;
+    }
+
+    button{
+        width: 53.9px;
+        padding-left: 12px; 
+    }
+}
